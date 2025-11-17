@@ -22,6 +22,14 @@ export default function Dashboard() {
 
   async function loadStats() {
     try {
+      // Check if Supabase is configured
+      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+      if (!supabaseUrl || supabaseUrl.includes('placeholder')) {
+        console.warn('Supabase not configured. Please set environment variables in Vercel.');
+        setLoading(false);
+        return;
+      }
+
       const [profiles, matches, likes, messages] = await Promise.all([
         supabase.from('profiles').select('id', { count: 'exact', head: true }),
         supabase.from('matches').select('id', { count: 'exact', head: true }),
