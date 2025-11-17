@@ -1,0 +1,31 @@
+# Pwani Love - Cursor Rules
+
+## Project Context
+- Dating/matchmaking app for Kenyan coast region
+- Flutter mobile app + Next.js admin + Supabase backend
+- Coastal, soft, modern UI/UX theme
+
+## Code Style
+- Use TypeScript for Next.js (strict mode)
+- Use Dart for Flutter (null safety, best practices)
+- Follow Flutter Material Design 3 guidelines
+- Prefer functional components in React/Next.js
+
+## Architecture Principles
+- Keep mobile app and admin dashboard separate
+- Use Supabase for all backend services
+- Implement RLS policies for security
+- Design for scalability (future Python microservices)
+
+## UI/UX Guidelines
+- Coastal theme: warm colors (blues, corals, soft whites)
+- Smooth animations and transitions
+- Mobile-first design
+- Accessible and inclusive
+
+## File Organization
+- Keep related files together
+- Use clear, descriptive names
+- Document complex logic
+- Maintain consistent structure across apps
+
