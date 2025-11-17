@@ -75,6 +75,10 @@ A modern matchmaking app for people along the Kenyan coast and beyond.
    npm run dev
    ```
 
+5. **Deploy Admin Web on Vercel**
+
+   A root-level `vercel.json` is included so Vercel knows to install/build from `apps/admin-web`. Import the repo into Vercel, keep the default settings, and add the env vars `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` in the project dashboard before deploying.
+
 ## 📚 Documentation
 
 See `docs/` for:

@@ -1,0 +1,12 @@
+﻿{
+  "version": 2,
+  "framework": "nextjs",
+  "installCommand": "cd apps/admin-web && npm install",
+  "buildCommand": "cd apps/admin-web && npm run build",
+  "devCommand": "cd apps/admin-web && npm run dev",
+  "outputDirectory": "apps/admin-web/.next",
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "${NEXT_PUBLIC_SUPABASE_URL}",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "${NEXT_PUBLIC_SUPABASE_ANON_KEY}"
+  }
+}
